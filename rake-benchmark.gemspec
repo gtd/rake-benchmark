@@ -3,22 +3,28 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rake/benchmark/version'
 
-Gem::Specification.new do |spec|
-  spec.name          = "rake-benchmark"
-  spec.version       = Rake::Benchmark::VERSION
-  spec.authors       = ["Eric Marden"]
-  spec.email         = ["eric@xentek.net"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+Gem::Specification.new do |gem|
+  gem.name          = "rake-benchmark"
+  gem.version       = Rake::Benchmark::VERSION
+  gem.authors       = ["StyleSeek Engineering"]
+  gem.email         = ["engineering@styleseek.com"]
+  gem.description   = %q{Uses Benchmark to display timing information about your rake tasks}
+  gem.summary       = %q{Display Benchmark output for your rake tasks.}
+  gem.homepage      = ""
+  gem.license       = "MIT"
 
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
+  gem.files         = `git ls-files`.split($/)
+  gem.executables   = gem.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  gem.test_files    = gem.files.grep(%r{^(spec)/})
+  gem.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "minitest"
+  gem.add_dependency "rake"
+
+  gem.add_development_dependency('bundler',     '~> 1.3')
+  gem.add_development_dependency('minitest',    '~> 4.2')
+  gem.add_development_dependency('ansi',        '~> 1.4')
+  gem.add_development_dependency('turn',        '~> 0.9')
+  gem.add_development_dependency('pry',         '~> 0.9')
+  gem.add_development_dependency('mocha',       '~> 0.13')
+  gem.add_development_dependency('gem-release', '~> 0.4')
 end
