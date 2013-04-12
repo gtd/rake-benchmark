@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = Rake::Benchmark::VERSION
   gem.authors       = ["StyleSeek Engineering"]
   gem.email         = ["engineering@styleseek.com"]
-  gem.description   = %q{Uses Benchmark to display timing information about your rake tasks}
-  gem.summary       = %q{Display Benchmark output for your rake tasks.}
-  gem.homepage      = ""
+  gem.description   = %q{Benchmarks your rake tasks and automatically outputs the timing information after it completes.}
+  gem.summary       = %q{Benchmark your Rake tasks.}
+  gem.homepage      = "https://github.com/styleseek/rake-benchmark"
   gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($/)
