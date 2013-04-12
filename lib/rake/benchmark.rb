@@ -1,6 +1,6 @@
-require "rake/benchmark/version"
 require 'rake'
 require 'benchmark'
+require "rake/benchmark/version"
 
 class Rake::Task
   def execute_with_benchmark(*args)
