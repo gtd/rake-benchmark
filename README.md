@@ -46,7 +46,7 @@ end
 
 ## Special Thanks
 
-Inspired by a [blog post](http://darwinweb.net/articles/benchmarking-rake-tasks-and-trivial-rails-testing-) by [Gabe de Silveira](https://github.com/gtd).
+Inspired by a [blog post](http://darwinweb.net/articles/benchmarking-rake-tasks-and-trivial-rails-testing-) by [Gabe da Silveira](https://github.com/gtd).
 
 
 ## Contributing
